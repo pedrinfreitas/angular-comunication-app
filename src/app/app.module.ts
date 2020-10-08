@@ -18,6 +18,8 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { ItemClientComponent } from './clients/item-client/item-client.component';
 import { ParentChildComponent } from './parent-child/parent-child.component';
 import { TimerComponent } from './parent-child/timer/timer.component';
+import { OnChangesComponent } from './on-changes/on-changes.component';
+import { NameChangeComponent } from './on-changes/name-change/name-change.component';
 
 
 
@@ -31,7 +33,9 @@ import { TimerComponent } from './parent-child/timer/timer.component';
     ClientsComponent,
     ItemClientComponent,
     ParentChildComponent,
-    TimerComponent
+    TimerComponent,
+    OnChangesComponent,
+    NameChangeComponent
   ],
   imports: [
     BrowserModule,
