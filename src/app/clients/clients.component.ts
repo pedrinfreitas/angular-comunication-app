@@ -16,9 +16,16 @@ export class ClientsComponent implements OnInit {
   ngOnInit(): void {}
 
   save() {
-    this.clients.push(
-      { name: this.name, age: this.age });
+    this.clients.push({ name: this.name, age: this.age });
     this.name = '';
     this.age = 0;
+  }
+
+  removeClient(i: number) {
+    this.clients.splice(i, 1);
+  }
+
+  updateClient(c: Client, i: number) {
+    this.clients[i] = c;
   }
 }

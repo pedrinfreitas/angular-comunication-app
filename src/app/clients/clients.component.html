@@ -17,6 +17,10 @@
   </mat-card-content>
 </mat-card>
 
-<p *ngFor="let c of clients">
-  {{ c.name }} tem {{ c.age }} anos!
-</p>
+<app-item-client 
+  *ngFor="let c of clients; let i=index"
+  [client]="c"
+  (removeClient)="removeClient(i)"
+  (updateClient)="updateClient($event, i)"
+  > 
+</app-item-client>
